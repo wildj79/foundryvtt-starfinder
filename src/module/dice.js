@@ -335,7 +335,14 @@ export class DiceSFRPG {
         const die = roll.dice[0];
 
         if (die?.options?.isDamageRoll) {
-            const types = die?.options?.damageTypes;
+            const isModal = die.options.isModal ?? false;
+            let types = die.options.damageTypes.join(',');
+            html.data('damageTypes', types);
+            html.data('isModal', isModal);
+
+            types = die.options.damageTypes.map(type => CONFIG.SFRPG.damageTypeAbbr[type]);
+            
+            html.find('.dice-total').append('<span class="damage-types">' + types.join((isModal ? ' or ' : ' & ')) + '</span>');
         }
     }
 }

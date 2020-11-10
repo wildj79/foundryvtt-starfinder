@@ -120,7 +120,6 @@ SFRPG.energyDamageTypes = {
     "cold": "SFRPG.DamageTypesCold",
     "electricity": "SFRPG.DamageTypesElectricity",
     "fire": "SFRPG.DamageTypesFire",
-    "radiation": "SFRPG.DamageTypesRadiation",
     "sonic": "SFRPG.DamageTypesSonic"
 };
 
@@ -134,6 +133,17 @@ SFRPG.damageTypes = {
     ...SFRPG.energyDamageTypes,
     ...SFRPG.kineticDamageTypes,
     "nonlethal": "SFRPG.DamageTypesNonlethal"
+};
+
+SFRPG.damageTypeAbbr = {
+    "acid": "SFRPG.DamageTypes.Abbreviations.Acid",
+    "bludgeoning": "SFRPG.DamageTypes.Abbreviations.Bludgeoning",
+    "cold": "SFRPG.DamageTypes.Abbreviations.Cold",
+    "electricity": "SFRPG.DamageTypes.Abbreviations.Electricity",
+    "fire": "SFRPG.DamageTypes.Abbreviations.Fire",
+    "piercing": "SFRPG.DamageTypes.Abbreviations.Piercing",
+    "slashing": "SFRPG.DamageTypes.Abbreviations.Slashing",
+    "sonic": "SFRPG.DamageTypes.Abbreviations.Sonic"
 };
 
 SFRPG.weaponDamageTypes = {

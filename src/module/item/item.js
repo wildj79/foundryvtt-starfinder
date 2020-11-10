@@ -686,7 +686,16 @@ export class ItemSFRPG extends Item {
 
         // Define Roll parts
         let parts = itemData.damage.parts.map(d => d[0]);
-        let damageTypes = itemData.damage.parts.map(d => d[1]);
+        // let damageTypes = itemData.damage.parts.map(d => d[1]);
+        let damageTypes = itemData.damage.parts.reduce((arr, part) => {
+            let types = Object.entries(part[1])
+                .filter(type => type[1])
+                .map(type => type[0]);
+
+            arr.push(...types);
+
+            return arr;
+        }, []);
         
         let acceptedModifiers = [SFRPGEffectType.ALL_DAMAGE];
         if (["msak", "rsak"].includes(this.data.data.actionType)) {

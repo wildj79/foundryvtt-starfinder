@@ -487,6 +487,18 @@
         "Cybernetic": "Kybernetisch",
         "Damage": "Schaden",
         "DamageReduction": "Schadensreduktion",
+        "DamageTypes": {
+            "Abbreviations": {
+                "Acid": "A",
+                "Bludgeoning": "B",
+                "Cold": "C",
+                "Electricity": "E",
+                "Fire": "F",
+                "Piercing": "P",
+                "Slashing": "S",
+                "Sonic": "So"
+            }
+        },
         "DamageTypesAcid": "Säure",
         "DamageTypesAcidAndBludgeoning": "Säure & Wucht",
         "DamageTypesAcidAndElectricity": "Säure & Elektrizität",

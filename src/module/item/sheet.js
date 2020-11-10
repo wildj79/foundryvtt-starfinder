@@ -290,9 +290,11 @@ export class ItemSheetSFRPG extends ItemSheet {
         // Handle Damage Array
         let damage = Object.entries(formData).filter(e => e[0].startsWith("data.damage.parts"));
         formData["data.damage.parts"] = damage.reduce((arr, entry) => {
-            let [i, j] = entry[0].split(".").slice(3);
+            let [i, j, type] = entry[0].split(".").slice(3);
             if (!arr[i]) arr[i] = [];
-            arr[i][j] = entry[1];
+            if (!type) arr[i][j] = entry[1];
+            else if (!arr[i][j]) arr[i][j] = { [type]: entry[1] };
+            else arr[i][j][type] = entry[1];
             return arr;
         }, []);
 

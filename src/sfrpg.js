@@ -129,7 +129,7 @@ Hooks.once("setup", function () {
         "powerCoreSystems", "thrusterSystems", "armorSystems", "computerSystems", "crewQuarterSystems", "defenseSystems",
         "driftEngineSystems", "sensorSystems", "shieldSystems", "expansionBaySystems", "securitySystems", "baseFrames",
         "starshipWeaponTypes", "starshipWeaponClass", "starshipWeaponProperties", "starshipArcs", "starshipWeaponRanges",
-        "starshipRoles", "vehicleTypes", "vehicleCoverTypes", "containableTypes"
+        "starshipRoles", "vehicleTypes", "vehicleCoverTypes", "containableTypes", "damageTypeAbbr"
     ];
 
     for (let o of toLocalize) {
