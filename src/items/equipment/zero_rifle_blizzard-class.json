@@ -60,7 +60,9 @@
       "parts": [
         [
           "4d8",
-          "cryo"
+          {
+            "cryo": true
+          }
         ]
       ]
     },

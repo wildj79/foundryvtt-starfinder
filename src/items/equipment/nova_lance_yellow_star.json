@@ -63,7 +63,10 @@
       "parts": [
         [
           "3d4 + @mod",
-          "electricity+fire"
+          {
+            "electricity": true,
+            "fire": true
+          }
         ]
       ]
     },

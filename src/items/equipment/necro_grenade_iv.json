@@ -76,7 +76,9 @@
       "parts": [
         [
           "6d8",
-          "cold"
+          {
+            "cold": true
+          }
         ]
       ]
     },

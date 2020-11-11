@@ -58,7 +58,9 @@
       "parts": [
         [
           "7d8 + @bonus",
-          "Cryo"
+          {
+            "Cryo": true
+          }
         ]
       ]
     },

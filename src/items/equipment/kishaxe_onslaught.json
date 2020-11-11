@@ -63,7 +63,9 @@
       "parts": [
         [
           "9d10 + @mod",
-          "slashing"
+          {
+            "slashing": true
+          }
         ]
       ]
     },

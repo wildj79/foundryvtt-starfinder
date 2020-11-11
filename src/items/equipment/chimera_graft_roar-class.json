@@ -76,7 +76,9 @@
       "parts": [
         [
           "4d12",
-          "fire"
+          {
+            "fire": true
+          }
         ]
       ]
     },

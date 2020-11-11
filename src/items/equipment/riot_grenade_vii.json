@@ -76,7 +76,9 @@
       "parts": [
         [
           "6d12",
-          "slashing"
+          {
+            "slashing": true
+          }
         ]
       ]
     },

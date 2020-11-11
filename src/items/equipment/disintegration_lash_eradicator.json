@@ -63,7 +63,9 @@
       "parts": [
         [
           "4d20 + @mod",
-          "acid"
+          {
+            "acid": true
+          }
         ]
       ]
     },

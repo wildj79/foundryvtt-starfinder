@@ -63,7 +63,9 @@
       "parts": [
         [
           "1d8",
-          "acid"
+          {
+            "acid": true
+          }
         ]
       ]
     },

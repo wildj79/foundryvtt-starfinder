@@ -63,7 +63,10 @@
       "parts": [
         [
           "4d6 + @mod",
-          "electricity+fire"
+          {
+            "electricity": true,
+            "fire": true
+          }
         ]
       ]
     },

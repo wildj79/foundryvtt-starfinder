@@ -62,7 +62,9 @@
       "parts": [
         [
           "8d8",
-          "cold"
+          {
+            "cold": true
+          }
         ]
       ]
     },

@@ -62,7 +62,9 @@
       "parts": [
         [
           "10d8 + @mod",
-          "fire"
+          {
+            "fire": true
+          }
         ]
       ]
     },

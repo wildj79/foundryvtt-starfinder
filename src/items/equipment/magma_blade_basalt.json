@@ -63,7 +63,10 @@
       "parts": [
         [
           "7d8 + @mod",
-          "fire+slashing"
+          {
+            "fire": true,
+            "slashing": true
+          }
         ]
       ]
     },

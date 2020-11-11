@@ -63,7 +63,9 @@
       "parts": [
         [
           "16d6",
-          "piercing"
+          {
+            "piercing": true
+          }
         ]
       ]
     },

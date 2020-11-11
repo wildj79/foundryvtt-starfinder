@@ -63,7 +63,10 @@
       "parts": [
         [
           "1d8",
-          "acid | fire"
+          {
+            "acid ": true,
+            " fire": true
+          }
         ]
       ]
     },

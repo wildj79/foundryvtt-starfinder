@@ -76,7 +76,9 @@
       "parts": [
         [
           "7d10",
-          "sonic"
+          {
+            "sonic": true
+          }
         ]
       ]
     },

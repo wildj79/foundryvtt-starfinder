@@ -58,7 +58,9 @@
       "parts": [
         [
           "1d8 + @bonus",
-          "Fire"
+          {
+            "Fire": true
+          }
         ]
       ]
     },

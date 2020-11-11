@@ -63,7 +63,10 @@
       "parts": [
         [
           "6d8 + @mod",
-          "piercing+slashing"
+          {
+            "piercing": true,
+            "slashing": true
+          }
         ]
       ]
     },

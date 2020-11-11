@@ -63,7 +63,9 @@
       "parts": [
         [
           "2d20",
-          "acid"
+          {
+            "acid": true
+          }
         ]
       ]
     },

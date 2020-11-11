@@ -63,7 +63,10 @@
       "parts": [
         [
           "2d8",
-          "bludgeoning+cryo"
+          {
+            "bludgeoning": true,
+            "cryo": true
+          }
         ]
       ]
     },

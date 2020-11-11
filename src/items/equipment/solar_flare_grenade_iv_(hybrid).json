@@ -76,7 +76,10 @@
       "parts": [
         [
           "4d10",
-          "electricity+fire"
+          {
+            "electricity": true,
+            "fire": true
+          }
         ]
       ]
     },

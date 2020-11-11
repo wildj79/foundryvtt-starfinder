@@ -63,7 +63,9 @@
       "parts": [
         [
           "8d4",
-          "acid"
+          {
+            "acid": true
+          }
         ]
       ]
     },

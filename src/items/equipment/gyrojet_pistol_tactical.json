@@ -63,7 +63,9 @@
       "parts": [
         [
           "3d12",
-          "bludgeoning"
+          {
+            "bludgeoning": true
+          }
         ]
       ]
     },

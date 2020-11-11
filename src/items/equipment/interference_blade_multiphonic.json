@@ -63,7 +63,9 @@
       "parts": [
         [
           "8d10 + @mod",
-          "sonic"
+          {
+            "sonic": true
+          }
         ]
       ]
     },

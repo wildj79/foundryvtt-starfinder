@@ -58,7 +58,9 @@
       "parts": [
         [
           "5d4 + @bonus +@mod",
-          "Piercing"
+          {
+            "Piercing": true
+          }
         ]
       ]
     },

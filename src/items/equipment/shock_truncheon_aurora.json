@@ -62,7 +62,9 @@
       "parts": [
         [
           "2d12 + @mod",
-          "electricity"
+          {
+            "electricity": true
+          }
         ]
       ]
     },

@@ -58,7 +58,9 @@
       "parts": [
         [
           "1d4 + @bonus +@mod",
-          "Fire"
+          {
+            "Fire": true
+          }
         ]
       ]
     },

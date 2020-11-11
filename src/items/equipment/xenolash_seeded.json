@@ -63,7 +63,10 @@
       "parts": [
         [
           "9d8 + @mod",
-          "acid+slashing"
+          {
+            "acid": true,
+            "slashing": true
+          }
         ]
       ]
     },

@@ -63,7 +63,10 @@
       "parts": [
         [
           "2d8 + @mod",
-          "electricity+slashing"
+          {
+            "electricity": true,
+            "slashing": true
+          }
         ]
       ]
     },

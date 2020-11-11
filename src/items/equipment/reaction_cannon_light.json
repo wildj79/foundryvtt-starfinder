@@ -63,7 +63,9 @@
       "parts": [
         [
           "1d10",
-          "piercing"
+          {
+            "piercing": true
+          }
         ]
       ]
     },

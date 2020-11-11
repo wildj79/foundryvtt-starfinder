@@ -63,7 +63,10 @@
       "parts": [
         [
           "6d6 + @mod",
-          "bludgeoning+electricity"
+          {
+            "bludgeoning": true,
+            "electricity": true
+          }
         ]
       ]
     },

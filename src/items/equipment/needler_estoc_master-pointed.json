@@ -63,7 +63,9 @@
       "parts": [
         [
           "18d6 + @mod",
-          "piercing"
+          {
+            "piercing": true
+          }
         ]
       ]
     },

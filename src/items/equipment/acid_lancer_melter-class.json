@@ -60,7 +60,9 @@
       "parts": [
         [
           "3d4",
-          "Acid"
+          {
+            "Acid": true
+          }
         ]
       ]
     },

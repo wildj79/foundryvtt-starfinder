@@ -60,7 +60,9 @@
       "parts": [
         [
           "4d6",
-          "Cryo"
+          {
+            "Cryo": true
+          }
         ]
       ]
     },

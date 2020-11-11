@@ -58,7 +58,9 @@
       "parts": [
         [
           "9d10 + @bonus +@mod",
-          "Cryo"
+          {
+            "Cryo": true
+          }
         ]
       ]
     },

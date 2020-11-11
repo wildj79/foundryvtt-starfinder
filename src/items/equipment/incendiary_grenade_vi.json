@@ -63,7 +63,9 @@
       "parts": [
         [
           "12d6",
-          "fire"
+          {
+            "fire": true
+          }
         ]
       ]
     },

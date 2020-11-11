@@ -63,7 +63,9 @@
       "parts": [
         [
           "3d12",
-          "sonic"
+          {
+            "sonic": true
+          }
         ]
       ]
     },

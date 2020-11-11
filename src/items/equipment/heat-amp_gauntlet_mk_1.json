@@ -58,7 +58,10 @@
       "parts": [
         [
           "1d6 + @bonus +@mod",
-          "Bludgeoning+Fire"
+          {
+            "Bludgeoning": true,
+            "Fire": true
+          }
         ]
       ]
     },

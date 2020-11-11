@@ -63,7 +63,9 @@
       "parts": [
         [
           "3d8",
-          "fire"
+          {
+            "fire": true
+          }
         ]
       ]
     },

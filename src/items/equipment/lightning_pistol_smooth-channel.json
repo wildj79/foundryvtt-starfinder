@@ -63,7 +63,9 @@
       "parts": [
         [
           "3d10",
-          "electricity"
+          {
+            "electricity": true
+          }
         ]
       ]
     },

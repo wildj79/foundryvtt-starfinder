@@ -63,7 +63,10 @@
       "parts": [
         [
           "6d6 + @mod",
-          "cryo|fire"
+          {
+            "cryo": true,
+            "fire": true
+          }
         ]
       ]
     },

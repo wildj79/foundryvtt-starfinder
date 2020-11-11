@@ -60,7 +60,10 @@
       "parts": [
         [
           "6d8",
-          "Cryo+Piercing"
+          {
+            "Cryo": true,
+            "Piercing": true
+          }
         ]
       ]
     },

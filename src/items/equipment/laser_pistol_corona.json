@@ -62,7 +62,9 @@
       "parts": [
         [
           "2d4",
-          "fire"
+          {
+            "fire": true
+          }
         ]
       ]
     },

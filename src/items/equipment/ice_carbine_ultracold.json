@@ -63,7 +63,10 @@
       "parts": [
         [
           "6d6",
-          "cryo+piercing"
+          {
+            "cryo": true,
+            "piercing": true
+          }
         ]
       ]
     },

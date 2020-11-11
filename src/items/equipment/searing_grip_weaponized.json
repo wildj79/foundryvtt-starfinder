@@ -63,7 +63,9 @@
       "parts": [
         [
           "11d6 + @mod",
-          "fire"
+          {
+            "fire": true
+          }
         ]
       ]
     },

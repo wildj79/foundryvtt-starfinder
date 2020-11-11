@@ -63,7 +63,9 @@
       "parts": [
         [
           "2d4 + @mod",
-          "electricity"
+          {
+            "electricity": true
+          }
         ]
       ]
     },

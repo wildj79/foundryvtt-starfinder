@@ -62,11 +62,15 @@
       "parts": [
         [
           "2d10 + @mod",
-          "electricity"
+          {
+            "electricity": true
+          }
         ],
         [
           "",
-          "fire"
+          {
+            "fire": true
+          }
         ]
       ]
     },

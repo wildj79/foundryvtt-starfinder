@@ -62,11 +62,15 @@
       "parts": [
         [
           "14d10 + @mod",
-          "bludgeoning"
+          {
+            "bludgeoning": true
+          }
         ],
         [
           "",
-          "fire"
+          {
+            "fire": true
+          }
         ]
       ]
     },

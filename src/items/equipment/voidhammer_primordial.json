@@ -63,7 +63,9 @@
       "parts": [
         [
           "2d6 + @mod",
-          "bludgeoning"
+          {
+            "bludgeoning": true
+          }
         ]
       ]
     },

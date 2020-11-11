@@ -76,7 +76,10 @@
       "parts": [
         [
           "6d8",
-          "acid+electricity"
+          {
+            "acid": true,
+            "electricity": true
+          }
         ]
       ]
     },

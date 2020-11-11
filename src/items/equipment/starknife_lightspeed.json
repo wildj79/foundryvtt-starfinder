@@ -62,11 +62,15 @@
       "parts": [
         [
           "8d8 + @mod",
-          "fire"
+          {
+            "fire": true
+          }
         ],
         [
           "",
-          "piercing"
+          {
+            "piercing": true
+          }
         ]
       ]
     },

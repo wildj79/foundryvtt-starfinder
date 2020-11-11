@@ -63,7 +63,9 @@
       "parts": [
         [
           "5d12",
-          "cryo"
+          {
+            "cryo": true
+          }
         ]
       ]
     },

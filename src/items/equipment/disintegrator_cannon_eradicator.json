@@ -63,7 +63,9 @@
       "parts": [
         [
           "5d20",
-          "acid"
+          {
+            "acid": true
+          }
         ]
       ]
     },

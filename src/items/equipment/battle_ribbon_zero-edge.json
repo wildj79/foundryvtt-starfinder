@@ -60,7 +60,9 @@
       "parts": [
         [
           "5d8 + @mod",
-          "Slashing"
+          {
+            "Slashing": true
+          }
         ]
       ]
     },

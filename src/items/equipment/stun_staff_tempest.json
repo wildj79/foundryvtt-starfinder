@@ -63,7 +63,9 @@
       "parts": [
         [
           "6d10 + @mod",
-          "electricity"
+          {
+            "electricity": true
+          }
         ]
       ]
     },

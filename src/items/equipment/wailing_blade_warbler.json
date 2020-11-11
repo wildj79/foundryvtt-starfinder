@@ -63,7 +63,10 @@
       "parts": [
         [
           "15d6 + @mod",
-          "slashing+sonic"
+          {
+            "slashing": true,
+            "sonic": true
+          }
         ]
       ]
     },

@@ -60,7 +60,9 @@
       "parts": [
         [
           "3d10 + @mod",
-          "Cryo"
+          {
+            "Cryo": true
+          }
         ]
       ]
     },

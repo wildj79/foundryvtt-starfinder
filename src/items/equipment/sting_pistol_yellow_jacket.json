@@ -63,7 +63,10 @@
       "parts": [
         [
           "2d8",
-          "acid+piercing"
+          {
+            "acid": true,
+            "piercing": true
+          }
         ]
       ]
     },

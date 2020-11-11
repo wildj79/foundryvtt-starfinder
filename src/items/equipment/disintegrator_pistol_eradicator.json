@@ -63,7 +63,9 @@
       "parts": [
         [
           "3d20",
-          "acid"
+          {
+            "acid": true
+          }
         ]
       ]
     },

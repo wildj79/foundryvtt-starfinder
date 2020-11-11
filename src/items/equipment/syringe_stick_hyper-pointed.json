@@ -60,7 +60,9 @@
       "parts": [
         [
           "2d4 + @mod",
-          "piercing"
+          {
+            "piercing": true
+          }
         ]
       ]
     },

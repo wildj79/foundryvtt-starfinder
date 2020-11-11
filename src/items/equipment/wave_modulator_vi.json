@@ -63,7 +63,10 @@
       "parts": [
         [
           "3d10",
-          "fire|sonic"
+          {
+            "fire": true,
+            "sonic": true
+          }
         ]
       ]
     },

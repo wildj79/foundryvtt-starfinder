@@ -63,7 +63,10 @@
       "parts": [
         [
           "3d8 + @mod",
-          "bludgeoning+cryo"
+          {
+            "bludgeoning": true,
+            "cryo": true
+          }
         ]
       ]
     },

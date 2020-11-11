@@ -63,7 +63,9 @@
       "parts": [
         [
           "8d8 + @mod",
-          "slashing"
+          {
+            "slashing": true
+          }
         ]
       ]
     },

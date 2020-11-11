@@ -63,7 +63,9 @@
       "parts": [
         [
           "4d6",
-          "electricity"
+          {
+            "electricity": true
+          }
         ]
       ]
     },

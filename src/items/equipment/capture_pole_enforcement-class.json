@@ -60,7 +60,9 @@
       "parts": [
         [
           "1d8 + @mod",
-          "Piercing"
+          {
+            "Piercing": true
+          }
         ]
       ]
     },

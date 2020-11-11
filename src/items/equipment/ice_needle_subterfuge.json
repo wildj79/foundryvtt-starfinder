@@ -63,7 +63,10 @@
       "parts": [
         [
           "13d6 + @mod",
-          "cryo+piercing"
+          {
+            "cryo": true,
+            "piercing": true
+          }
         ]
       ]
     },

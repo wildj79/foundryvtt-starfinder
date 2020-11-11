@@ -63,7 +63,10 @@
       "parts": [
         [
           "2d4 + @mod",
-          "acid+slashing"
+          {
+            "acid": true,
+            "slashing": true
+          }
         ]
       ]
     },

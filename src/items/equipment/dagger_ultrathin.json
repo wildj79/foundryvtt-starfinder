@@ -62,7 +62,9 @@
       "parts": [
         [
           "4d4 + @mod",
-          "slashing"
+          {
+            "slashing": true
+          }
         ]
       ]
     },

@@ -76,7 +76,9 @@
       "parts": [
         [
           "2d12",
-          "fire"
+          {
+            "fire": true
+          }
         ]
       ]
     },

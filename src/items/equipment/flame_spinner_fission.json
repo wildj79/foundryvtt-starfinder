@@ -63,7 +63,9 @@
       "parts": [
         [
           "8d12 + @mod",
-          "fire"
+          {
+            "fire": true
+          }
         ]
       ]
     },

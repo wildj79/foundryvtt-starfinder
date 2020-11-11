@@ -63,7 +63,10 @@
       "parts": [
         [
           "13d6 + @mod",
-          "electricity+piercing"
+          {
+            "electricity": true,
+            "piercing": true
+          }
         ]
       ]
     },

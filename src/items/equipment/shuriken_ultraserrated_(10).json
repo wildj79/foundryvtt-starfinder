@@ -58,7 +58,9 @@
       "parts": [
         [
           "7d10 + @mod + @bonus",
-          "Piercing"
+          {
+            "Piercing": true
+          }
         ]
       ]
     },

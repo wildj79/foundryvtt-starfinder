@@ -60,7 +60,10 @@
       "parts": [
         [
           "3d10",
-          "Electricity+Fire"
+          {
+            "Electricity": true,
+            "Fire": true
+          }
         ]
       ]
     },

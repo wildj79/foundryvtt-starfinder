@@ -76,7 +76,9 @@
       "parts": [
         [
           "8d12",
-          "bludgeoning"
+          {
+            "bludgeoning": true
+          }
         ]
       ]
     },

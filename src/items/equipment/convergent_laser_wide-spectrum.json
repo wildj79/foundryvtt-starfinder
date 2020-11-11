@@ -60,7 +60,9 @@
       "parts": [
         [
           "7d10",
-          "fire"
+          {
+            "fire": true
+          }
         ]
       ]
     },

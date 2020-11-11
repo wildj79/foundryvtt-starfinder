@@ -62,11 +62,15 @@
       "parts": [
         [
           "5d6 + @mod",
-          "bludgeoning"
+          {
+            "bludgeoning": true
+          }
         ],
         [
           "",
-          "sonic"
+          {
+            "sonic": true
+          }
         ]
       ]
     },

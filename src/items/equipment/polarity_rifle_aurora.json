@@ -81,7 +81,9 @@
       "parts": [
         [
           "2d8",
-          "electricity"
+          {
+            "electricity": true
+          }
         ]
       ]
     },

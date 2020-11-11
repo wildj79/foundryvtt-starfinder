@@ -76,7 +76,9 @@
       "parts": [
         [
           "1d10",
-          "bludgeoning"
+          {
+            "bludgeoning": true
+          }
         ]
       ]
     },

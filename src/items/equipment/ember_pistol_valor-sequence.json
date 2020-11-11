@@ -58,7 +58,9 @@
       "parts": [
         [
           "3d6 + @bonus",
-          "Piercing"
+          {
+            "Piercing": true
+          }
         ]
       ]
     },

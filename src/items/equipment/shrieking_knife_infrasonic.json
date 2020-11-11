@@ -63,7 +63,9 @@
       "parts": [
         [
           "4d4 + @mod",
-          "sonic"
+          {
+            "sonic": true
+          }
         ]
       ]
     },

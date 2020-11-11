@@ -63,7 +63,9 @@
       "parts": [
         [
           "3d10",
-          "acid"
+          {
+            "acid": true
+          }
         ]
       ]
     },

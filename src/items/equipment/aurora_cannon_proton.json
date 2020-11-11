@@ -63,7 +63,10 @@
       "parts": [
         [
           "15d4",
-          "electricity+fire"
+          {
+            "electricity": true,
+            "fire": true
+          }
         ]
       ]
     },

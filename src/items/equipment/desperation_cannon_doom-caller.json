@@ -63,7 +63,10 @@
       "parts": [
         [
           "3d12",
-          "electricity+fire"
+          {
+            "electricity": true,
+            "fire": true
+          }
         ]
       ]
     },

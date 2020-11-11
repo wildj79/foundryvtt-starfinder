@@ -63,7 +63,9 @@
       "parts": [
         [
           "1d3",
-          "cryo"
+          {
+            "cryo": true
+          }
         ]
       ]
     },

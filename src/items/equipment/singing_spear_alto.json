@@ -63,7 +63,10 @@
       "parts": [
         [
           "4d8 + @mod + @mod",
-          "piercing+sonic"
+          {
+            "piercing": true,
+            "sonic": true
+          }
         ]
       ]
     },

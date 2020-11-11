@@ -58,7 +58,9 @@
       "parts": [
         [
           "1d4 + @bonus",
-          "Cryo"
+          {
+            "Cryo": true
+          }
         ]
       ]
     },

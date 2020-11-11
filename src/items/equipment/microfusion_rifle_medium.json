@@ -63,7 +63,10 @@
       "parts": [
         [
           "3d8",
-          "electricity+fire"
+          {
+            "electricity": true,
+            "fire": true
+          }
         ]
       ]
     },

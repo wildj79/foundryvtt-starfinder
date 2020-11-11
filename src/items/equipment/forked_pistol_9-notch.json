@@ -58,7 +58,10 @@
       "parts": [
         [
           "4d4 + @bonus",
-          "Electricity+Fire"
+          {
+            "Electricity": true,
+            "Fire": true
+          }
         ]
       ]
     },

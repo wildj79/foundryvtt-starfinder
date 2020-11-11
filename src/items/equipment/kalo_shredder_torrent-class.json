@@ -60,7 +60,9 @@
       "parts": [
         [
           "4d6",
-          "slashing"
+          {
+            "slashing": true
+          }
         ]
       ]
     },

@@ -60,7 +60,9 @@
       "parts": [
         [
           "3d8 + @mod",
-          "fire"
+          {
+            "fire": true
+          }
         ]
       ]
     },
