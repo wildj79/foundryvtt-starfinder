@@ -176,6 +176,12 @@ export class DiceSFRPG {
     static damageRoll({ event = new Event(''), parts, criticalData, damageTypes, actor, data, template, title, speaker, flavor, critical = true, onClose, dialogOptions }) {
         flavor = flavor || title;
 
+        if (parts?.length === 1 && parts[0].trim() === "") {
+            const message = game.i18n.localize('SFRPG.Errors.InvalidDamageFormula');
+            ui.notifications.error(message);
+            throw new Error(message);
+        }
+
         const autoFastForward = game.settings.get('sfrpg', 'useQuickRollAsDefault');
         if (event && autoFastForward) {
             event.shiftKey = autoFastForward;

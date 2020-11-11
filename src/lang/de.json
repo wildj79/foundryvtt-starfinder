@@ -659,6 +659,9 @@
             }
         },
         "EnergyArmorClass": "Energetische RK",
+        "Errors": {
+            "InvalidDamageFormula": "Provided damage formula is invalid. Please correct and retry."
+        },
         "FeatTypes": {
             "General": "Allgemeine Talente",
             "Combat" : "Kampftalente"

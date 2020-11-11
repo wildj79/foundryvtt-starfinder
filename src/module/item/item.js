@@ -501,7 +501,7 @@ export class ItemSFRPG extends Item {
         // Define Roll parts
         const parts = [];
         
-        if (itemData.data.attackBonus !== 0) parts.push("@item.data.attackBonus");
+        if (itemData.data.attackBonus && itemData.data.attackBonus !== 0) parts.push("@item.data.attackBonus");
         if (abl) parts.push(`@abilities.${abl}.mod`);
         if (["character", "drone"].includes(this.actor.data.type)) parts.push("@attributes.bab");
         if (isWeapon && !itemData.data.proficient) parts.push("-4");

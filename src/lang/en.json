@@ -659,6 +659,9 @@
             }
         },
         "EnergyArmorClass": "Energy AC",
+        "Errors": {
+            "InvalidDamageFormula": "Provided damage formula is invalid. Please correct and retry."
+        },
         "FeatTypes": {
             "General": "General Feats",
             "Combat" : "Combat Feats"
