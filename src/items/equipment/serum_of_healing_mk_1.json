@@ -62,7 +62,12 @@
       "effect": ""
     },
     "damage": {
-      "parts": []
+      "parts": [
+        [
+          "1d8",
+          {}
+        ]
+      ]
     },
     "formula": "",
     "save": {

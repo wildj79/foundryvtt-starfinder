@@ -218,7 +218,7 @@ export class DiceSFRPG {
             if (die) {
                 die.options.isDamageRoll = true;
                 die.options.damageTypes = damageTypes;
-                die.options.isModal = data.item.properties.modal || data.item.properties.double;
+                die.options.isModal = (data.item.properties?.modal ?? false) || (data.item.properties?.double ?? false);
             }
 
             // Execute the roll and send it to chat
@@ -345,6 +345,8 @@ export class DiceSFRPG {
             let types = die.options.damageTypes.join(',');
             html.data('damageTypes', types);
             html.data('isModal', isModal);
+
+            if (types.trim() === "") return;
 
             types = die.options.damageTypes.map(type => CONFIG.SFRPG.damageTypeAbbr[type]);
             
