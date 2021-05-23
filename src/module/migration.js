@@ -39,13 +39,15 @@ const migrateActorData = function (actor, schema) {
     if (schema < SFRPGMigrationSchemas.NPC_DATA_UPATE && actor.type === 'npc') _migrateNPCData(actor, updateData);
     if (schema < SFRPGMigrationSchemas.THE_PAINFUL_UPDATE) _resetActorFlags(actor, updateData);
     if (schema < SFRPGMigrationSchemas.THE_HAPPY_UPDATE && actor.type === 'character') _migrateActorAbilityScores(actor, updateData);
+    if (schema < SFRPGMigrationSchemas.THE_WEBP_UPDATE) _migrateActorItemsIconToWebP(actor, updateData);
 
     return updateData;
 };
 
 const migrateItemData = function (item, schema) {
     const updateData = {};
-    
+    if (schema < SFRPGMigrationSchemas.THE_WEBP_UPDATE) _migrateItemData(item, updateData);
+
     return updateData;
 };
 
@@ -61,6 +63,31 @@ const _migrateActorAbilityScores = function (actor, data) {
 
     return data;
 };
+
+const _migrateActorItemsIconToWebP = function (actor, data) {
+
+    var items = [];
+    for (let i in actor.items) {
+        let item = actor.items[i];
+        var img = item.img;
+
+        // No image
+        if(!img) {
+            continue;
+        }
+        // Any reference to a .png or .jpg in /sfrpg/icons should be replaced with a link to a .webp with the same name
+        if (img.includes("systems/sfrpg/icons/") || img.includes("systems/sfrpg/images/cup/")) {
+            img = img.toLowerCase().replace(".png",".webp");
+            img = img.toLowerCase().replace(".jpg",".webp");
+            item.img = img;
+        }
+
+        items.push(item);
+    }
+
+    data["items"] = items;
+    return data;
+}
 
 const _resetActorFlags = function (actor, data) {
     const actorData = duplicate(actor.data);
@@ -99,8 +126,26 @@ const _migrateNPCData = function (actor, data) {
     return data;
 };
 
+const _migrateItemData = function(item, data) {
+
+    var img = item.img;
+    // No image
+    if(!img) {
+       return data;
+    }
+    // Any reference to a .png or .jpg in /sfrpg/icons should be replaced with a link to a .webp with the same name
+    // We do the same for the references to the sfrpg/images/cup folder
+    if (img.includes("systems/sfrpg/icons/") || img.includes("systems/sfrpg/images/cup/gameplay/")) {
+        img = img.toLowerCase().replace(".png",".webp");
+        img = img.toLowerCase().replace(".jpg",".webp");
+        data["img"] = img;
+    }
+    return data;
+}
+
 const SFRPGMigrationSchemas = Object.freeze({
     NPC_DATA_UPATE: 0.001,
     THE_PAINFUL_UPDATE: 0.002,
-    THE_HAPPY_UPDATE: 0.003
+    THE_HAPPY_UPDATE: 0.003,
+    THE_WEBP_UPDATE: 0.004 // We changed all icons from .png to .webp
 });
