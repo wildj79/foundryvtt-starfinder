@@ -21,7 +21,7 @@ export class DiceSFRPG {
     * @param {Object} dialogOptions      Modal dialog options
     */
     static async d20Roll({ event = new Event(''), parts, rollContext, title, speaker, flavor, advantage = true,
-        critical = 20, fumble = 1, onClose, dialogOptions }) {
+        critical = 20, fumble = 1, chatMessage = true, onClose, dialogOptions }) {
         
         if (!rollContext?.isValid()) {
             console.log(['Invalid rollContext', rollContext]);
@@ -89,11 +89,13 @@ export class DiceSFRPG {
                     speaker: speaker,
                     content: flavor
                 };
-        
-                ChatMessage.create(chatData, { chatBubble: true });
+				
+                if (chatMessage) {
+                    ChatMessage.create(chatData, { chatBubble: true });
+                }
             }
 
-            let useCustomCard = game.settings.get("sfrpg", "useCustomChatCards");
+            let useCustomCard = game.settings.get("sfrpg", "useCustomChatCards") && chatMessage;
             let errorToThrow = null;
             if (useCustomCard) {
                 //Push the roll to the ChatBox
@@ -117,15 +119,17 @@ export class DiceSFRPG {
                     const insertIndex = rollContent.indexOf(`<section class="tooltip-part">`);
                     const explainedRollContent = rollContent.substring(0, insertIndex) + preparedRollExplanation + rollContent.substring(insertIndex);
             
-                    ChatMessage.create({
-                        flavor: title,
-                        speaker: speaker,
-                        content: explainedRollContent,
-                        rollMode: rollMode,
-                        roll: roll,
-                        type: CONST.CHAT_MESSAGE_TYPES.ROLL,
-                        sound: CONFIG.sounds.dice
-                    });
+                    if (chatMessage){
+                        ChatMessage.create({
+                            flavor: title,
+                            speaker: speaker,
+                            content: explainedRollContent,
+                            rollMode: rollMode,
+                            roll: roll,
+                            type: CONST.CHAT_MESSAGE_TYPES.ROLL,
+                            sound: CONFIG.sounds.dice
+                        });
+                    }
                 });
             }
 
@@ -276,7 +280,7 @@ export class DiceSFRPG {
     * @param {Function} onClose         Callback for actions to take when the dialog form is closed
     * @param {Object} dialogOptions     Modal dialog options
     */
-    static async damageRoll({ event = new Event(''), parts, criticalData, damageTypes, rollContext, title, speaker, flavor, critical = true, onClose, dialogOptions }) {
+    static async damageRoll({ event = new Event(''), parts, criticalData, damageTypes, rollContext, title, speaker, flavor, critical = true, chatMessage = true, onClose, dialogOptions }) {
         flavor = flavor || title;
 
         if (!rollContext?.isValid()) {
@@ -399,7 +403,7 @@ export class DiceSFRPG {
                 tagContent += `</footer></div>`;
             }
 
-            let useCustomCard = game.settings.get("sfrpg", "useCustomChatCards");
+            let useCustomCard = game.settings.get("sfrpg", "useCustomChatCards") && chatMessage;
             let errorToThrow = null;
             if (useCustomCard) {
                 //Push the roll to the ChatBox
@@ -423,15 +427,17 @@ export class DiceSFRPG {
                     const insertIndex = rollContent.indexOf(`<section class="tooltip-part">`);
                     const explainedRollContent = rollContent.substring(0, insertIndex) + preparedRollExplanation + rollContent.substring(insertIndex);
             
-                    ChatMessage.create({
-                        flavor: flavor,
-                        speaker: speaker,
-                        content: explainedRollContent + tagContent,
-                        rollMode: rollMode,
-                        roll: roll,
-                        type: CONST.CHAT_MESSAGE_TYPES.ROLL,
-                        sound: CONFIG.sounds.dice
-                    });
+                    if (chatMessage){
+                        ChatMessage.create({
+                            flavor: flavor,
+                            speaker: speaker,
+                            content: explainedRollContent + tagContent,
+                            rollMode: rollMode,
+                            roll: roll,
+                            type: CONST.CHAT_MESSAGE_TYPES.ROLL,
+                            sound: CONFIG.sounds.dice
+                        });
+                    }
                 });
             }
 
